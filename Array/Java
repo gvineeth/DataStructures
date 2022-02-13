@@ -116,6 +116,9 @@ public class myclass {
         System.out.println(intArray1[0] == cloneArray1[0]);
         System.out.println(intArray1[1] == cloneArray1[1]);
         
+        for(int cloneArrayvar: cloneArray1[1])
+        System.out.println(cloneArrayvar); // 1 2 3
+        
     }
     
     public static void sum(int arr[])
