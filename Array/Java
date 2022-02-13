@@ -105,6 +105,17 @@ public class myclass {
          
         System.out.println(intArray == cloneArray); // false
         
+        int intArray1[][] = {{1,2,3},{4,5}};
+         
+        int cloneArray1[][] = intArray1.clone();
+         
+        // will print false
+        System.out.println(intArray1 == cloneArray1);
+         
+        // will print true as shallow copy is created
+        System.out.println(intArray1[0] == cloneArray1[0]);
+        System.out.println(intArray1[1] == cloneArray1[1]);
+        
     }
     
     public static void sum(int arr[])
