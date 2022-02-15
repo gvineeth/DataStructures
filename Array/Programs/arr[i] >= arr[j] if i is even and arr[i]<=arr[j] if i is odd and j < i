@@ -1,10 +1,6 @@
 myInput=input().split()
 arrange=sorted(myInput)
-n=len(myInput)
-if n%2==0:
-  myIndex=n//2
-else:
-  myIndex=n//2+1
+myIndex=round(len(myInput)/2)
 r=list(reversed(arrange[:myIndex]))
 j=1
 for i in arrange[myIndex:]:
