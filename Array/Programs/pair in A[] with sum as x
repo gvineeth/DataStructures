@@ -1,17 +1,20 @@
 def myFun():
-  A=list(map(int,input().split()))
-  key=int(input())
+  arr=list(map(int,input().split()))
+  x=int(input())
   r=[]
-  for i in A:
-    if key-i in A and not key-i==i and not (key-i,i) in r:
-     r.append((i,key-i))
+  s=set()
+  for i in arr:
+      if x-i in s:
+          r.append((i,x-i))
+      s.add(i)
   return r
+
 
 print(myFun())
 
 '''
 i - 1 4 5 6 10 8 14
     15
-o - [(1, 14), (5, 10)]
+o - [(10, 5), (14, 1)]
 
 '''
